@@ -768,7 +768,7 @@ input:checked + .modal-form-checkbox-label span:first-child {
 }
 
 .modal-form-submit-button {
-    
+    display: block;
     min-width: 169px;
     height: 56px;
     font-family: "Roboto", sans-serif;

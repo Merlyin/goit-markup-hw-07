@@ -182,18 +182,98 @@ ul {
 
 .mobile-hamburger-menu-div {
     
-    background-color: #4d5ae5;
-    border-radius: 50%;
+    /* background-color: #4d5ae5;
+    border-radius: 50%; */
     display: flex;
     align-items: center;
     justify-content: center;
-    fill: currentColor;
+    /* fill: currentColor; */
 }
 
 .hamburger-menu-svg {
     fill: #2E2F42;
 }
 
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+.menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+  }
+  
+  .menu .link:hover,
+  .menu .link:focus {
+    text-decoration: underline;
+  }
+
+.menu-toggle {
+    min-height: 40px;
+    min-width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  
+    margin: 0;
+    padding: 0;
+    background-color: transparent;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    outline: none;
+  }
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.menu-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    background-color: #FFF;
+    z-index: 999;
+  
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+.menu-container .menu-toggle {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    color: #2E2F42;
+}
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
+    display: block;
+    padding: 10px;
+    color: #2E2F42;
+    text-decoration: none;
+}
+
+.menu-container .footer-social-media-links {
+    margin-bottom: 0;
+}
 
 /* hero section */
 
@@ -258,7 +338,7 @@ ul {
 }
 
 .second-section-list {
-    gap: 72px;
+    /* gap: 72px; */
 }
 
 .second-section-list-element {
@@ -323,9 +403,7 @@ ul {
 /* third section */
 
 .third-section {
-    /* mobile first */
     display: none;
-    padding-bottom: 120px;
 }
 
 .mission-title {
@@ -981,6 +1059,7 @@ input:checked + .modal-form-checkbox-label span:first-child {
     .mobile-hamburger-menu-div {
         display: none;
     }
+
     .header-div-flexbox-styling {
         
         display: flex;
@@ -998,6 +1077,16 @@ input:checked + .modal-form-checkbox-label span:first-child {
         justify-content: center;
     }
 
+}
+
+@media screen and (768px <= width <= 1158px) {
+    .second-section-list-element {
+        width: 356px;
+    }
+
+    .second-section-list {
+        gap: 0;
+    }
 }
 
 @media screen and (width >= 1158px) {
@@ -1064,6 +1153,11 @@ input:checked + .modal-form-checkbox-label span:first-child {
         min-width: 264px;
     } 
     
+    .third-section {
+        display: flex;
+        padding-bottom: 120px;
+    }
+
     .footer-form-div {
         width: auto;
         display: flex;

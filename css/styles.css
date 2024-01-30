@@ -274,12 +274,7 @@ ul {
 .second-section-icon {
     /* mobile first */
     display: none;
-    align-items: center;
-    justify-content: center;
-    height: 112px;
-    background-color: #f4f4fd;
-    border-radius: 4px;
-    margin-bottom: 8px;
+    
 }
 
 .list-title {
@@ -1065,6 +1060,7 @@ input:checked + .modal-form-checkbox-label span:first-child {
 
     .second-section-list-element {
         /* width: 100%; */
+        height: auto;
         min-width: 264px;
     } 
     

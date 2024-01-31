@@ -262,6 +262,14 @@ ul {
     padding: 0;
     margin: 0;
     list-style: none;
+    gap: 40px;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
+
 }
 
 .mobile-menu .link {
@@ -271,8 +279,29 @@ ul {
     text-decoration: none;
 }
 
+.menu-container .address-info {
+    padding: 0;
+    margin-top: 99%;
+}
+
+.menu-container .header-menu-flexbox-styling {
+    display: flex;
+    gap: 40px;
+    flex-direction: column-reverse;
+}
+
 .menu-container .footer-social-media-links {
-    margin-bottom: 0;
+    margin-top: 10%;
+}
+
+.address-details-mobile-number {
+    color: #2E2F42;
+    font-family: Roboto;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+    text-align: left;
 }
 
 /* hero section */
@@ -1067,6 +1096,17 @@ input:checked + .modal-form-checkbox-label span:first-child {
         height: 72px;
     }
     
+    .header-menu-flexbox-styling {
+        gap: 0;
+    }
+
+    .header-nav-flexbox-styling .header-menu-flexbox-styling {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        flex-wrap: nowrap;
+    }
+
     .list {
         /* list-style: none;
         display: flex;
@@ -1076,17 +1116,72 @@ input:checked + .modal-form-checkbox-label span:first-child {
         justify-content: space-around; */
         justify-content: center;
     }
+    .footer-form-div {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+    }
+
+    .logo-footer {
+        /* display: inline-block; */
+        display: inline-block;
+        margin-left: 0;
+        margin-right: 0;
+        margin-bottom: 16px;
+    }
+
+    .footer-social-media-links {
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 0px;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 72px;
+    }
+
+    .footer-form-label-input {
+        width: 264px;
+        height: 40px;
+        border: 1px solid #ffffff;
+        background-color: transparent;
+        font-size: 12px;
+        line-height: 1.5;
+        letter-spacing: 0.04em;
+        padding-left: 16px;
+        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+        border-radius: 4px;
+        color: #ffffff;
+    }
+
+    .footer-form {
+        display: flex;
+        gap: 24px;
+        flex-direction: row;
+        flex-wrap: nowrap; 
+        justify-content: center;
+        width: 100%;
+        padding: 0;
+    }
+
+    .footer-logo-and-paragraph {
+        margin-left: 0;
+    }
 
 }
 
 @media screen and (768px <= width <= 1158px) {
     .second-section-list-element {
         width: 356px;
+        align-items: flex-start;
     }
 
     .second-section-list {
         gap: 0;
     }
+
 }
 
 @media screen and (width >= 1158px) {
@@ -1101,6 +1196,9 @@ input:checked + .modal-form-checkbox-label span:first-child {
     
         justify-content: space-between;
         height: 72px;
+    }
+    .header-menu-flexbox-styling {
+        gap: 24px;
     }
     .list {
         /* list-style: none;
@@ -1158,59 +1256,7 @@ input:checked + .modal-form-checkbox-label span:first-child {
         padding-bottom: 120px;
     }
 
-    .footer-form-div {
-        width: auto;
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        justify-content: center;
-    }
-
-    .logo-footer {
-        /* display: inline-block; */
-        display: inline-block;
-        margin-left: 0;
-        margin-right: 0;
-        margin-bottom: 16px;
-    }
-
-    .footer-social-media-links {
-        display: flex;
-        margin-left: auto;
-        margin-right: auto;
-        margin-top: 0px;
-        flex-direction: column;
-        align-items: flex-start;
-        margin-bottom: 72px;
-    }
-
-    .footer-form-label-input {
-        width: 264px;
-        height: 40px;
-        border: 1px solid #ffffff;
-        background-color: transparent;
-        font-size: 12px;
-        line-height: 1.5;
-        letter-spacing: 0.04em;
-        padding-left: 16px;
-        box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-        border-radius: 4px;
-        color: #ffffff;
-    }
-
-    .footer-form {
-        display: flex;
-        gap: 24px;
-        flex-direction: row;
-        flex-wrap: nowrap; 
-        justify-content: center;
-        width: 100%;
-        padding: 0;
-    }
-
-    .footer-logo-and-paragraph {
-        margin-left: 0;
-    }
+    
 }
 
 
